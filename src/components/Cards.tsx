@@ -31,7 +31,8 @@ export function Card({title , link , type}:CardProps) {
             <div className="pt-4">
                 {type === "youtube" &&  <iframe 
                  className="w-full aspect-video"
-                 src={link.replace("watch","embed").replace("?v=","/")} 
+                   
+                 src={link.replace("watch","embed")} 
                  title="YouTube video player" 
                  frameBorder="0" 
                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;picture-in-picture; web-share"
